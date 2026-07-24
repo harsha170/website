@@ -14,8 +14,8 @@ function Home() {
               <h1 className="display-5 fw-bold">{hero.title}</h1>
               <p className="lead hero-lead mb-4">{hero.description}</p>
               <div className="d-flex flex-column flex-sm-row gap-3">
-                <a href={hero.primaryCta.href} className="btn btn-primary btn-lg">{hero.primaryCta.label}</a>
-                <a href={hero.secondaryCta.href} className="btn btn-outline-light btn-lg">{hero.secondaryCta.label}</a>
+                <Link to={hero.primaryCta.href} className="btn btn-primary btn-lg">{hero.primaryCta.label}</Link>
+                <Link to={hero.secondaryCta.href} className="btn btn-outline-light btn-lg">{hero.secondaryCta.label}</Link>
               </div>
             </div>
 
